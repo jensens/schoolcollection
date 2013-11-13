@@ -57,7 +57,7 @@ for zahl, dauer, ok in times:
         summef += dauer
         anzahlf += 1
 if anzahlok:
-    print "Fuer die %d richtigen im Durchschnitt %1.2fs" % (summeok, summeok/anzahlok)
+    print "Fuer die %d richtigen im Durchschnitt %1.2fs" % (anzahlok, summeok/anzahlok)
 if anzahlf:
-    print "Fuer die %d falschen im Durchschnitt %1.2fs" % (summef, summef/anzahlf)
+    print "Fuer die %d falschen im Durchschnitt %1.2fs" % (anzahlf, summef/anzahlf)
 
