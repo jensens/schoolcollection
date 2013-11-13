@@ -1,5 +1,8 @@
 import random
 import time
+import uuid
+
+rand = random.Random(int(uuid.uuid4()))
 
 def tbk(zahl):
     result = []
@@ -11,7 +14,7 @@ def tbk(zahl):
 times = []
 
 for idx in range(10):
-    ziel = random.randint(10, 100)
+    ziel = rand.randint(10, 100)
     tbks = tbk(ziel)
     start = time.time()
     inp = raw_input("Welche Teilbarkeiten hat Zahl %d ?: " % ziel)
